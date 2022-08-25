@@ -149,13 +149,13 @@ class AdlessSettingsPage
             $new_input['earnerID'] = sanitize_text_field($input['earnerID']);
 
         if (isset($input['services']))
-            $new_input['services'] = sanitize_text_field($input['services']);
+            $new_input['services'] = explode(",", sanitize_text_field(str_replace(" ", "", $input['services'])));
 
         if (isset($input['paywallMessage']))
             $new_input['paywallMessage'] = base64_encode(wpautop($input['paywallMessage']));
 
         if (isset($input['customConfiguration']))
-            $new_input['customConfiguration'] = $input['customConfiguration'];
+            $new_input['customConfiguration'] = sanitize_text_field($input['customConfiguration']);
 
         return $new_input;
     }
@@ -195,7 +195,7 @@ class AdlessSettingsPage
     {
         printf(
             '<input type="text" id="services" name="adless_options[services]" value="%s" placeholder="SERVICE_1, SERVICE_2" class="regular-text" />',
-            isset($this->options['services']) ? str_replace('"', "", esc_attr($this->options['services'])) : '',
+            isset($this->options['services']) ? esc_attr(implode(", ", $this->options['services'])) : '',
 
         );
     }
