@@ -1,9 +1,9 @@
- === Infobox ===
+ === Adless ===
 Tags: adless, paywall, subscription
 Contributors: adless
 Requires at least: 3.3
 Tested up to: 6.0
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,7 +30,3 @@ Please report issues and feature requests on the [GitHub issue tracker](https://
 No questions raised about this plugin yet! Please contact us on the [GitHub issue tracker](https://github.com/adless-tech/wordpress-plugin/issues) or [support@adless.net](mailto:support@adless.net?subject=Wordpress%20Plugin) if you have any questions and we will answer the common ones here over time.
 
 Visit [adless.net/faq](https://adless.net/faq?utm_source=wordpress&medium=integration) for general FAQs about Adless.
-
- == Changelog ==
-
- 1.0 - Initial release

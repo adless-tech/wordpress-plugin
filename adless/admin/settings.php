@@ -204,8 +204,8 @@ class AdlessSettingsPage
     {
         printf(
             wp_editor(
-                !empty($this->options['paywallMessage']) ? base64_decode($this->options['paywallMessage']) : '<h2>Thank\'s for your interest!</h2>               
-<p>This content is available for paying visitors only.</p>',
+                !empty($this->options['paywallMessage']) ? base64_decode($this->options['paywallMessage']) : '<h2>Thank you for your interest!</h2>
+                <p>This content is available for paying visitors only.</p>',
                 "adless_paywallMessage",
                 array(
                     'wpautop' => true,
